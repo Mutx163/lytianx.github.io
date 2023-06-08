@@ -1,0 +1,13 @@
+<div class="bber-bottom">
+    <div class="bber-info">
+        <div class="bber-info-time">
+            <i class="fas fa-calendar-days"></i>
+            <time class="datetime" datetime="<%= moment(item.date).format() %>"></time>
+        </div>
+        <% if(item.link){ %>
+            <a class="bber-content-link" href="<%= url_for(item.link) %>" title="跳转到短文指引的链接">
+                链接
+            </a>   
+        <% } %>    
+    </div>
+</div>

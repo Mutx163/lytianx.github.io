@@ -1,245 +1,709 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Category: 搭建 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/categories/%E6%90%AD%E5%BB%BA/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+<html lang="zh-CN" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>分类 搭建 | Hexo</title>
+<noscript>开启Javascript是必要的</noscript>
+<link rel="icon" type="image/x-icon" href="/img/avatar.webp">
+<link rel="apple-touch-icon" href="/img/avatar.webp">
+<meta name="apple-mobile-web-app-title" content="Hexo">
+<link rel="bookmark" href="/img/avatar.webp">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/avatar.webp">
+<meta name="description" content="">
+<meta name="theme-color" content="#1C1C1F">
+<link rel="stylesheet" href="/css/var.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/lib/snackbar.min.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+<script src="/lib/qrcode.min.js"></script>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+
+
+
+
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2021-12-12 00:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":false,"consolePlus":{"enable":true,"twikooUrl":null}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false};</script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body id="body">
+        
+        <div id="console" style="zoom: 1;" class="">
+    <div class="close-btn" onclick="acrylic.hideConsole()" href="javascript:void(0);">
+        <i class="fas fa-circle-xmark"></i>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+    
+        <div class="console-card-group">
+            <div class="console-card-group-left">
+                <div class="console-card" id="card-newest-comments" onclick="acrylic.hideConsole()">
+                    <div class="card-content">
+                        <div class="author-content-item-tips">互动</div>
+                        <div class="author-content-item-title">最新评论</div>
+                    </div>
+                    <div class="aside-list"></div>
+                </div>
+    
+            </div>
+            <div class="console-card-group-right">
+                <div class="console-card tags" onclick="acrylic.hideConsole()">
+                    <div class="card-content">
+                        <div class="author-content-item-tips">标签</div>
+                        <div class="author-content-item-title">寻找感兴趣的领域</div>
+                    </div>
+                    <div class="card-tag-cloud">
+                        
+                            <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 0.8rem; color: #d3d3d3">刷机<sup>3</sup></a>
+                        
+                            <a href="/tags/%E6%B5%B7%E7%BE%8E%E8%BF%AA/" style="font-size: 0.8rem; color: #d3d3d3">海美迪<sup>2</sup></a>
+                        
+                            <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 0.8rem; color: #d3d3d3">流量<sup>2</sup></a>
+                        
+                            <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 0.8rem; color: #d3d3d3">工具<sup>4</sup></a>
+                        
+                            <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 0.8rem; color: #d3d3d3">宝塔<sup>1</sup></a>
+                        
+                            <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" style="font-size: 0.8rem; color: #d3d3d3">青龙面板<sup>2</sup></a>
+                        
+                            <a href="/tags/%E8%81%94%E9%80%9A/" style="font-size: 0.8rem; color: #d3d3d3">联通<sup>1</sup></a>
+                        
+                            <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 0.8rem; color: #d3d3d3">青年大学习<sup>1</sup></a>
+                        
+                            <a href="/tags/%E9%85%B7%E5%AE%89/" style="font-size: 0.8rem; color: #d3d3d3">酷安<sup>1</sup></a>
+                        
+                    </div>
+                </div>
+                <div class="console-card history" onclick="acrylic.hideConsole()">
+                    <ul class="card-archive-list">
+    
+     
+        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023-06/')" data-pjax-state=""><span
+            class="card-archive-list-date">2023-06</span>
+            <div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span
+                    class="card-archive-list-count-unit">篇</span></div>
+            </a>
+        </li>
+     
+        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2021-08/')" data-pjax-state=""><span
+            class="card-archive-list-date">2021-08</span>
+            <div class="card-archive-list-count-group"><span class="card-archive-list-count">10</span><span
+                    class="card-archive-list-count-unit">篇</span></div>
+            </a>
+        </li>
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+</ul>
 
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
+                </div>
+            </div>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/13/%E5%AE%9D%E5%A1%94%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-13T14:09:10.000Z" itemprop="datePublished">Aug 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/13/%E5%AE%9D%E5%A1%94%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">宝塔青龙面板安装教程</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/13/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E5%BA%93/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-13T14:09:10.000Z" itemprop="datePublished">Aug 13</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/13/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E5%BA%93/">青龙面板常用库</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
+    <div class="button-group">
+        <div class="console-btn-item"> <a class="darkmode_switchbutton" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow" data-pjax-state=""><i class="fas fa-moon"
+                    style="font-size: 1rem;"></i></a></div>
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%8D%E6%B5%81/">免流</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%86%E4%BA%AB/">分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%90%AD%E5%BB%BA/">搭建</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%9B%98/">网盘</a></li></ul>
     </div>
-  </div>
-
-
-  
+    <div class="console-mask" onclick="acrylic.hideConsole()" href="javascript:void(0);" rel="external nofollow"></div>
+</div>
+        <div id="sidebar" style="zoom: 1;">
+    <div id="menu-mask" style="display: none;"></div>
+    <div id="sidebar-menus" class>
+        <span class="sidebar-menu-item-title">功能</span>
+        <div class="sidebar-menu-item">
+            <a class="darkmode_switchbutton menu-child" onclick="acrylic.switchDarkMode()" title="显示模式切换"
+                href="javascript:void(0);" rel="external nofollow">
+                <i class="fas fa-moon" style="font-size: 1rem;"></i>
+                <span>显示模式</span>
+            </a>
+        </div>
+        
+            <div class="back-menu-list-groups">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%B7%E6%9C%BA/" rel="tag">刷机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9D%E5%A1%94/" rel="tag">宝塔</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%81%E9%87%8F/" rel="tag">流量</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%B7%E7%BE%8E%E8%BF%AA/" rel="tag">海美迪</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%81%94%E9%80%9A/" rel="tag">联通</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%85%B7%E5%AE%89/" rel="tag">酷安</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" rel="tag">青年大学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" rel="tag">青龙面板</a></li></ul>
-    </div>
   </div>
-
-
   
+        
+        <div class="menus_items">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 16.67px;">刷机</a> <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 10px;">宝塔</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 20px;">工具</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 13.33px;">流量</a> <a href="/tags/%E6%B5%B7%E7%BE%8E%E8%BF%AA/" style="font-size: 13.33px;">海美迪</a> <a href="/tags/%E8%81%94%E9%80%9A/" style="font-size: 10px;">联通</a> <a href="/tags/%E9%85%B7%E5%AE%89/" style="font-size: 10px;">酷安</a> <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">青年大学习</a> <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" style="font-size: 13.33px;">青龙面板</a>
+</div>
+        <span class="sidebar-menu-item-title">标签</span>
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+            <div class="item-headline">
+                <i class="fas fa-tags"></i>
+                <span>标签</span>
+            </div>
+            <div class="card-tag-cloud">
+                
+                    <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 1em; color: #d3d3d3">刷机
+                        <sup>3</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%B5%B7%E7%BE%8E%E8%BF%AA/" style="font-size: 1em; color: #d3d3d3">海美迪
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 1em; color: #d3d3d3">流量
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 1em; color: #d3d3d3">工具
+                        <sup>4</sup>
+                    </a>
+                
+                    <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1em; color: #d3d3d3">宝塔
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" style="font-size: 1em; color: #d3d3d3">青龙面板
+                        <sup>2</sup>
+                    </a>
+                
+                    <a href="/tags/%E8%81%94%E9%80%9A/" style="font-size: 1em; color: #d3d3d3">联通
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 1em; color: #d3d3d3">青年大学习
+                        <sup>1</sup>
+                    </a>
+                
+                    <a href="/tags/%E9%85%B7%E5%AE%89/" style="font-size: 1em; color: #d3d3d3">酷安
+                        <sup>1</sup>
+                    </a>
+                
+            </div>
+        </div>
     </div>
-  </div>
-
-  
+</div>    
+        
+            <div class="page" id="body-wrap">
+                <header class="not-top-img" id="page-header">
+    <nav id="nav" class="show">
+    <div id="nav-group">
+        <div id="blog_name">
+            
+                <div class="back-home-button" tabindex="-1">
+                    <i class="back-home-button-icon fas fa-grip-vertical"></i>
+                    <div class="back-menu-list-groups">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
-    </div>
   </div>
-
-
   
+                </div>
+            
+            <a id="site-name" href="/" title="返回博客主页">
+                    
+                        <span class="heoicon">Acrylic</span>
+                    
+            </a>
+        </div>
+        <div id="page-name-mask">
+            <div id="page-name">
+                <a id="page-name-text" onclick="acrylic.toTop()">Hexo</a>
+            </div>
+        </div>
+        <div id="menus">
+            <div class="menus_items">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/06/08/%E6%B5%8B%E8%AF%95/">title测试</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/23/%E9%85%B7%E5%AE%89%E7%94%B5%E8%84%91%E7%89%88%EF%BC%9F%EF%BC%88uwp%EF%BC%89/">酷安电脑版？（uwp）</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/23/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%81%B7%E6%87%92%E6%95%99%E7%A8%8B/">青年大学习偷懒教程</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/23/%E5%85%8D%E6%B5%81%E6%95%99%E7%A8%8B/">免流教程</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/23/%E8%81%94%E9%80%9A%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E6%9C%BA%E5%99%A8%E4%BA%BA/">联通流量监控机器人</a>
-          </li>
-        
-      </ul>
+</div>
+        </div>
+        <!-- <div id="nav-left">
+            <div id="fps-group">
+                <div id="fps">145</div><span class="fpsText">FPS</span>
+            </div>
+        </div> -->
+        <div id="nav-right">
+            
+    <div class="nav-button only-home" id="travellings_button">
+        <a class="site-page"  target="_blank" rel="noopener external nofollow" href="https://www.travellings.cn/go.html" title="开往-友链接力"  width="120">
+            <i class="fa-solid fa-train-subway" style="font-size: 1rem;"></i>
+        </a>
     </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
 
+    <div class="nav-button" id="randomPost_button">
+        <a class="site-page" onclick="toRandomPost()"
+            title="随机前往一个文章">
+            <i class="fas fa-shuffle" style="font-size: 1rem;"></i>
+        </a>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+
+
+
+    <div class="nav-button" id="nav-console">
+        <a class="console_switchbutton" onclick="acrylic.showConsole()"
+        title="显示中控台" href="javascript:void(0);" rel="external nofollow">
+        <i class="fas fa-bars-progress" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
+<div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
+    <a class="totopbtn">
+        <i class="fas fa-arrow-up"></i>
+        <span id="percent">0</span>
+    </a>
+</div>
+<div id="toggle-menu">
+    <a class="site-page">
+        <i class="fas fa-bars fa-fw" style="font-size: 1rem;"></i>
+    </a>
+</div>
+        </div>
+    </div>
 </nav>
+        
+</header>
+                <main class="layout" id="content-inner">
+    <div id="category">
+        <div class="category-in-bar">
+            <div class="category-in-bar-tips">分类</div>
+            <div id="category-bar">
+                <div class="category-bar-items" id="category-bar-items">
+                    <div class="category-bar-items" id="category-bar-items">
+    <div class="category-bar-item " id="category-bar-home">
+        <a href="/">首页</a>
+    </div>
+    
+        <div class="category-bar-item ">
+            <a href="/categories/%E6%90%9E%E6%9C%BA/">搞机</a>
+        </div>
+    
+        <div class="category-bar-item ">
+            <a href="/categories/%E5%85%8D%E6%B5%81/">免流</a>
+        </div>
+    
+        <div class="category-bar-item select">
+            <a href="/categories/%E6%90%AD%E5%BB%BA/">搭建</a>
+        </div>
+    
+        <div class="category-bar-item ">
+            <a href="/categories/%E7%BD%91%E7%9B%98/">网盘</a>
+        </div>
+    
+        <div class="category-bar-item ">
+            <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+        </div>
+    
+        <div class="category-bar-item ">
+            <a href="/categories/%E5%88%86%E4%BA%AB/">分享</a>
+        </div>
+    
+</div>
+<a class="category-bar-more" href="/categories/">更多</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="article-sort-title">搭建</div>
+        <div class="article-sort">
+            
+
+    
+        <div class="article-sort-item year">2021</div>
+    
+    <div class="article-sort-item">
+        <a class="article-sort-item-img" href="/2021/08/13/%E5%AE%9D%E5%A1%94%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="宝塔青龙面板安装教程">
+            <img src="/img/hello.jpg"
+                alt="宝塔青龙面板安装教程">
+        </a>
+        <div class="article-sort-item-info">
+            <a class="article-sort-item-title" href="/2021/08/13/%E5%AE%9D%E5%A1%94%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="宝塔青龙面板安装教程"
+                onclick="window.event.cancelBubble=true;">
+                宝塔青龙面板安装教程
+            </a>
+            <div class="article-sort-item-tags">
+                
+                    <a class="article-meta__tags" href="/tags/%E5%B7%A5%E5%85%B7/" onclick="window.event.cancelBubble=true;">
+                        <span class="tags-punctuation">#</span>
+                        工具
+                    </a>
+                
+                    <a class="article-meta__tags" href="/tags/%E5%AE%9D%E5%A1%94/" onclick="window.event.cancelBubble=true;">
+                        <span class="tags-punctuation">#</span>
+                        宝塔
+                    </a>
+                
+                    <a class="article-meta__tags" href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" onclick="window.event.cancelBubble=true;">
+                        <span class="tags-punctuation">#</span>
+                        青龙面板
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="article-sort-item">
+        <a class="article-sort-item-img" href="/2021/08/13/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E5%BA%93/" title="青龙面板常用库">
+            <img src="/img/hello.jpg"
+                alt="青龙面板常用库">
+        </a>
+        <div class="article-sort-item-info">
+            <a class="article-sort-item-title" href="/2021/08/13/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%B8%B8%E7%94%A8%E5%BA%93/" title="青龙面板常用库"
+                onclick="window.event.cancelBubble=true;">
+                青龙面板常用库
+            </a>
+            <div class="article-sort-item-tags">
+                
+                    <a class="article-meta__tags" href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" onclick="window.event.cancelBubble=true;">
+                        <span class="tags-punctuation">#</span>
+                        青龙面板
+                    </a>
+                
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <nav id="pagination">
+    <div class="pagination">
+        
+        <span class="page-number current">1</span>
+    </div>
+</nav>    
+    </div>
+    <div class="aside-content" id="aside-content">
+    
+    
+        
+        <div class="card-widget card-info">
+    <div class="card-content">
+        <div class="card-info-avatar is-center">
+            <div class="author-info__sayhi" id="author-info__sayhi">
+            </div>
+            <div class="author-info__name">
+                John Doe
+            </div>
+            <div class="author-info__description">这有关于<b>开发</b>、<b>技术</b>相关的问题和看法，还有对于动漫的一些<b>杂评</b>。<br>相信你可以在这里找到对你有用的知识和教程。</div>
+        </div>
+    </div>
+    <div class="banner-button-group">
+        <a class="banner-button" href="/">
+            <i class="fas fa-circle-chevron-right"></i>
+            <span class="banner-button-text">个人主页</span>
+        </a>
+    </div>
+    <div class="card-info-social-icons is-center">
+        
+    </div>
+</div>
+     
+    
+        
+        <div class="card-widget heo-right-widget" id="card-wechat" style="background: #0099FF ;">
+    <div id="flip-wrapper">
+        <div id="flip-content">
+            <div class="face">
+                <div class="left">
+                    <span class="title">QQ群</span>
+                    <span class="desc">加入官方QQ群与我们交流 <i class="fa-solid fa-play"></i></span>
+                </div>
+            </div>
+            <div class="back face">
+                <div class="left">
+                    <span class="title">扫一扫</span>
+                    <span class="desc">获取最新信息和帮助 <i class="fa-solid fa-play"></i></span>
+                </div>
+                <img class="nolazyload" src="/img/qqgroup.png">
+            </div>
+        </div>
+    </div>
+</div>
+     
+    
+    <div class="sticky_layout">
+            
+        
+            
+        <div class="card-widget card-recent-post">
+    <div class="item-headline">
+        <i class="fas fa-list-ol"></i>
+        <span>最近发布</span>
+    </div>
+    <div class="aside-list">
+        
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2023/06/08/%E6%B5%8B%E8%AF%95/" title="title测试">
+                    <img
+                        alt="title测试"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                    <a class="title" href="/2023/06/08/%E6%B5%8B%E8%AF%95/" title="title测试">
+                        title测试
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2021/08/23/%E9%85%B7%E5%AE%89%E7%94%B5%E8%84%91%E7%89%88%EF%BC%9F%EF%BC%88uwp%EF%BC%89/" title="酷安电脑版？（uwp）">
+                    <img
+                        alt="酷安电脑版？（uwp）"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2021/08/23/%E9%85%B7%E5%AE%89%E7%94%B5%E8%84%91%E7%89%88%EF%BC%9F%EF%BC%88uwp%EF%BC%89/">
+                            分享
+                        </a>
+                    
+                    <a class="title" href="/2021/08/23/%E9%85%B7%E5%AE%89%E7%94%B5%E8%84%91%E7%89%88%EF%BC%9F%EF%BC%88uwp%EF%BC%89/" title="酷安电脑版？（uwp）">
+                        酷安电脑版？（uwp）
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2021/08/23/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%81%B7%E6%87%92%E6%95%99%E7%A8%8B/" title="青年大学习偷懒教程">
+                    <img
+                        alt="青年大学习偷懒教程"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2021/08/23/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%81%B7%E6%87%92%E6%95%99%E7%A8%8B/">
+                            教程
+                        </a>
+                    
+                    <a class="title" href="/2021/08/23/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0%E5%81%B7%E6%87%92%E6%95%99%E7%A8%8B/" title="青年大学习偷懒教程">
+                        青年大学习偷懒教程
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2021/08/23/%E5%85%8D%E6%B5%81%E6%95%99%E7%A8%8B/" title="免流教程">
+                    <img
+                        alt="免流教程"
+                        src="/img/hello.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2021/08/23/%E5%85%8D%E6%B5%81%E6%95%99%E7%A8%8B/">
+                            免流
+                        </a>
+                    
+                    <a class="title" href="/2021/08/23/%E5%85%8D%E6%B5%81%E6%95%99%E7%A8%8B/" title="免流教程">
+                        免流教程
+                    </a>
+                </div>
+            </div>
+                
+        
+            <div class="aside-list-item">
+                <a class="thumbnail" href="/2021/08/23/%E8%81%94%E9%80%9A%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="联通流量监控机器人">
+                    <img
+                        alt="联通流量监控机器人"
+                        src="https://i.loli.net/2021/08/23/VWMCaBTJS8ulRmo.jpg">
+                </a>
+                <div class="content">
+                    
+                        <a class="article-recent_post_categories" href="/2021/08/23/%E8%81%94%E9%80%9A%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                            免流
+                        </a>
+                    
+                    <a class="title" href="/2021/08/23/%E8%81%94%E9%80%9A%E6%B5%81%E9%87%8F%E7%9B%91%E6%8E%A7%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="联通流量监控机器人">
+                        联通流量监控机器人
+                    </a>
+                </div>
+            </div>
+            
+    </div>
+</div>
+     
+        
+            
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+    <div class="card-tag-cloud">
+    
+        <a href="/tags/%E5%88%B7%E6%9C%BA/" style="font-size: 0.8rem; color: #d3d3d3">刷机<sup>3</sup></a>
+    
+        <a href="/tags/%E6%B5%B7%E7%BE%8E%E8%BF%AA/" style="font-size: 0.8rem; color: #d3d3d3">海美迪<sup>2</sup></a>
+    
+        <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 0.8rem; color: #d3d3d3">流量<sup>2</sup></a>
+    
+        <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 0.8rem; color: #d3d3d3">工具<sup>4</sup></a>
+    
+        <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 0.8rem; color: #d3d3d3">宝塔<sup>1</sup></a>
+    
+        <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" style="font-size: 0.8rem; color: #d3d3d3">青龙面板<sup>2</sup></a>
+    
+        <a href="/tags/%E8%81%94%E9%80%9A/" style="font-size: 0.8rem; color: #d3d3d3">联通<sup>1</sup></a>
+    
+        <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" style="font-size: 0.8rem; color: #d3d3d3">青年大学习<sup>1</sup></a>
+    
+        <a href="/tags/%E9%85%B7%E5%AE%89/" style="font-size: 0.8rem; color: #d3d3d3">酷安<sup>1</sup></a>
+    
+</div>
+    <ul class="card-archive-list">
+    
+     
+        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2021/')" data-pjax-state=""><span
+            class="card-archive-list-date">2021</span>
+            <div class="card-archive-list-count-group"><span class="card-archive-list-count">10</span><span
+                    class="card-archive-list-count-unit">篇</span></div>
+            </a>
+        </li>
+     
+        <li class="card-archive-list-item"><a class="card-archive-list-link" onclick="pjax.loadUrl('/archives/2023/')" data-pjax-state=""><span
+            class="card-archive-list-date">2023</span>
+            <div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span
+                    class="card-archive-list-count-unit">篇</span></div>
+            </a>
+        </li>
+        
+</ul>
+
+    <hr>
+    <div class="webinfo">
+    
+        <div class="webinfo-item">
+            <div class="webinfo-item-title">
+                <i class="item-icon fas fa-file-alt"></i>
+                <div class="item-name">文章总数 :</div>
+            </div>
+            <div class="item-count">11</div>
+        </div>
+    
+    
+        
+        
+    
+    
+        <div class="webinfo-item">
+            <div class="webinfo-item-title">
+                <i class="item-icon fas fa-stopwatch"></i>
+                <div class="item-name">建站天数 :</div>
+            </div>
+            <div class="item-count" id="runtimeshow">
+            </div>
+        </div>
+    
+    
+    
+</div>
+</div>
+     
+        
+    </div>
+</div> 
+</main> 
+                <footer id="footer">
+                    <div id="footer_deal">
+    
+    <img class="footer_mini_logo" src="/img/avatar.webp"
+        title="返回顶部" onclick="acrylic.toTop()">
+    
+</div>    
+<div id="heo-footer">
+    
+    
+</div>
+<div id="footer-section">
+    <div class="footer-section-links">
+        <div class="footer-section-left">
+            <div id="footer-section-tips">
+                <div class="copyright">©2021 - 2023 By 
+                    <a class="footer-section-link" href="/" rel="external nofollow">John Doe</a>
+                    <a class="footer-section-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" rel="external nofollow" target="_blank"> Theme By Acrylic-Next</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section-right">
+            <a class="footer-section-link" href="/rss/">订阅</a>
+            
+            <a class="footer-section-link cc" target="_blank" href="https://creativecommons.org/licenses/by/4.0/" title="cc协议">
+                <i class="fa-solid fa-closed-captioning"></i>
+            </a>
+        </div>
+    </div>
+</div>
+                </footer>
+            </div>
+         
+        <div>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
     
 
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
+<script src="/lib/pjax.min.js"></script>
 
 
+
+<script src="/lib/snackbar.min.js"></script>
+
+
+    
+<script src="/lib/view-image.min.js"></script>
+
+
+
+<div id="js-pjax">
+    
+     
+</div>
+
+
+    
+<script src="/js/extend/covercolor/web.js"></script>
+
+        
+
+
+    
+<script src="/js/extend/console/console.js"></script>
+
+
+    <script>
+  let pjaxSelectors = [
+    'title',
+    '#body-wrap',
+    '#site-config',
+    'meta[name="description"]',
+    '#js-pjax'
+  ]
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+  const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
 
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+  })
 
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+  document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+      pjax.loadUrl('/404.html')
+    }
+  })
+</script>
+    
+</div>
+        
+     
+        <div class="needEndHide" id="nav-music" onclick="acrylic.musicToggle()">
+    <div id="nav-music-hoverTips">音乐已暂停</div>
+    <meting-js id="1708664797" server="tencent" type="playlist" mutex="true"
+        preload="none" data-lrctype="0" order="random" theme="var(--heo-main)"></meting-js>
+</div>
+    
+    </body>
 </html>
+<script>const posts=["2023/06/08/测试/","2021/08/23/酷安电脑版？（uwp）/","2021/08/23/青年大学习偷懒教程/","2021/08/23/免流教程/","2021/08/23/联通流量监控机器人/","2021/08/14/小米MIUI系统手动更新教程/","2021/08/13/宝塔青龙面板安装教程/","2021/08/13/青龙面板常用库/","2021/08/13/把网盘映射到本地使用/","2021/08/06/ROOT海美迪H7四代/","2021/08/06/四代刷第三方固件/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
