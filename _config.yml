@@ -103,5 +103,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git 
-  repository: https://<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>@github.com/github.com/Mutx163/lytianx 
+  repository: https://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@github.com/github.com/Mutx163/lytianx.git
   branch: main
