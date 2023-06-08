@@ -106,5 +106,5 @@ deploy:
   type: git
   repo:
     github:
-      url: git@github.com:Mutx163/lytianx.git  # 记得把username替换为自己的用户名
+      url: git@github.com:Mutx163/mutx163.github.io.git  # 记得把username替换为自己的用户名
       branch: main #2020年10月后github新建仓库默认分支改为main，注意修改
