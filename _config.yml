@@ -99,9 +99,12 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+
+# 站点部署到github要配置Deployment
+## Docs: https://zespia.tw/hexo/docs/deploy.html
 deploy:
   type: git
-  repository: https://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@github.com/github.com/Mutx163/lytianx.git
-  branch: main
+  repo:
+    github:
+      url: git@github.com:Mutx163/lytianx.git  # 记得把username替换为自己的用户名
+      branch: main #2020年10月后github新建仓库默认分支改为main，注意修改
