@@ -21,10 +21,10 @@ nav:
   left:
     enable: true
     menu:
-      # 我的:
-      #   博客:
-      #     icon: /img/avatar.webp
-      #     url: /
+       我的:
+         博客:
+           icon: /img/avatar.webp
+           url: /关于我
 # 导航栏内容
   menu:
     # 文库:
@@ -119,7 +119,7 @@ hometop:
 
   recommendList:
     sup: 置顶文章
-    title: 让Acrylic成为您的Hexo主题
+    title: 想看看有什么嘛
     url: /
     img: /img/acrylic.png
     color: '#006a73'
@@ -147,7 +147,7 @@ aside:
       #   url: mailto:a@nalex.top
     button:
       text: 个人主页
-      url: /
+      url: /关于我
 
   flip:
     color: '#0099FF'
@@ -171,7 +171,7 @@ aside:
     uv: false
     updatetime: false
     runtimeenable: true
-    runtime: '2021-12-12 00:00:00'
+    runtime: '2023-06-08 22:00:00'
 
 # 页脚
 footer:
