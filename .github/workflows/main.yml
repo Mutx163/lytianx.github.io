@@ -3,7 +3,7 @@ name: 自动部署 Hexo
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -21,10 +21,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+
+          
       - name: 安装 Hexo CI
-        run: 
+        run: |
           export TZ='Asia/Shanghai'
-          npm install hexo-cli -g
+          npm i -g hexo-cli
+          npm i
 
       - name: 缓存
         uses: actions/cache@v1
@@ -37,10 +40,12 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: 
           npm install
+          npm update
+
 
       - name: 部署博客
         run: 
-          hexo clean && hexo g && hexo douban && gulp
+          hexo g && hexo douban && hexo deploy
           cd ./public
           git init
           git config user.name "${{secrets.GIT_NAME}}"
