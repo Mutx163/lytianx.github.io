@@ -43,7 +43,7 @@ jobs:
 
       - name: 部署博客
         run: 
-          hexo clean && hexo g && hexo douban && gulp
+          hexo g && hexo douban && hexo deploy
           cd ./public
           git init
           git config user.name "${{secrets.GIT_NAME}}"
