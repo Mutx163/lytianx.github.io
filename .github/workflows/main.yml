@@ -40,8 +40,17 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: 
           npm install
+          npm update
+
 
       - name: 部署博客
         run: 
           hexo g && hexo douban && hexo deploy
-
+          cd ./public
+          git init
+          git config user.name "${{secrets.GIT_NAME}}"
+          git config user.email "${{secrets.GIT_EMAIL}}"
+          git add .
+          git commit -m "Update"
+          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:master
+          git push --force --quiet "https://${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
