@@ -1,55 +1,40 @@
-name: 自动部署 Hexo
+name: HEXO自动部署
 
 on:
   push:
     branches:
-      - main
+    - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [14.x]
 
     steps:
-      - name: 开始运行
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-      - name: 设置 Node.js ${{ matrix.node-version }}
+      - name: 使用 Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
 
-
-          
-      - name: 安装 Hexo CI
+      - name: 配置环境
+        env:
+          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
         run: |
-          export TZ='Asia/Shanghai'
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name "${{secrets.GITNAME}}"
+          git config --global user.email "${{secrets.GITME}}"
+      - name: 安装依赖项
+        run: |
           npm i -g hexo-cli
           npm i
+      - name: 部署 hexo
+        run: |
+          hexo clean && hexo generate && hexo deploy
 
-      - name: 缓存
-        uses: actions/cache@v1
-        id: cache-dependencies
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-
-      - name: 安装插件
-        if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: 
-          npm install
-
-
-      - name: 部署博客
-        run: 
-          hexo g && hexo douban && hexo deploy
-          cd ./public
-          git init
-          git config user.name "${{secrets.GIT_NAME}}"
-          git config user.email "${{secrets.GIT_EMAIL}}"
-          git add .
-          git commit -m "Update"
-          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:master
-          git push --force --quiet "https://${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
