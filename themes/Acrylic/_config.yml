@@ -54,16 +54,16 @@ nav:
 
 # 导航栏右侧快捷菜单
   right: # @todo 允许用户自定义
-    travellings: true   #开往
+    travellings: false   #开往
     random: true        #
     console: true       #控制台
 
 # heo式顶部一大坨
 hometop:
-  bbtime: false
+  bbtime: true
   banner:
     enable: true
-    title: 分享设计<br>与科技生活
+    title: 分享技术<br>与科技生活
     url: blog.zhheo.com
     icon:
       # AE:
@@ -105,17 +105,17 @@ hometop:
 
   categoryGroup:
     G1:
-      name: Acrylic
-      icon: fas fa-dove
-      url: /tags/Acrylic/
-    G2:
-      name: 热门文章
+      name: 刷机
       icon: fas fa-burn
-      url: /tags/热门/
-    G3:
-      name: 实用教程
+      url: /tags/刷机/
+    G2:
+      name: 教程
       icon: fas fa-book
       url: /tags/教程/
+    G3:
+      name: 生活
+      icon: fas fa-book
+      url: /tags/生活/
 
   recommendList:
     sup: 置顶文章
@@ -166,10 +166,10 @@ aside:
   # 建站时间
   siteinfo:
     postcount: true
-    wordcount: false
-    pv: false
-    uv: false
-    updatetime: false
+    wordcount: true
+    pv: true
+    uv: true
+    updatetime: true
     runtimeenable: true
     runtime: '2023-06-08 22:00:00'
 
@@ -222,7 +222,7 @@ page:
 post:
   default:
     cover: /img/hello.jpg
-    locate: 北京
+    locate: 海南
     copyright: 原创
   meta:
     date: true
@@ -242,7 +242,7 @@ post:
     local: false  
 
 # 关于界面
-about: false
+about: true
 
 # 404页面
 errorpage:
