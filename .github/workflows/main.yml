@@ -1,0 +1,51 @@
+name: 自动部署 Hexo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - name: 开始运行
+        uses: actions/checkout@v1
+
+      - name: 设置 Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 安装 Hexo CI
+        run: 
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+
+      - name: 缓存
+        uses: actions/cache@v1
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 安装插件
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: 
+          npm install
+
+      - name: 部署博客
+        run: 
+          hexo clean && hexo g && hexo douban && gulp
+          cd ./public
+          git init
+          git config user.name "${{secrets.GIT_NAME}}"
+          git config user.email "${{secrets.GIT_EMAIL}}"
+          git add .
+          git commit -m "Update"
+          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:master
+          git push --force --quiet "https://${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
