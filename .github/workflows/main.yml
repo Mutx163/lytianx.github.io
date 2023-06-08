@@ -21,10 +21,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+
+          
       - name: 安装 Hexo CI
-        run: 
+        run: |
           export TZ='Asia/Shanghai'
-          npm install hexo-cli -g
+          npm i -g hexo-cli
+          npm i
 
       - name: 缓存
         uses: actions/cache@v1
