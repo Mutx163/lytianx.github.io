@@ -192,13 +192,13 @@ footer:
       #   url: /
 
   group:
-    # 导航:
-    #   文章归档: /archives/
-    #   文章分类: /categories/
-    #   文章标签: /tags/
-    #   友链: /link/
-    # 服务:
-    #   51la统计: https://51.la/
+     导航:
+       文章归档: /archives/
+       文章分类: /categories/
+       文章标签: /tags/
+       友链: /link/
+     服务:
+       51la统计: https://51.la/
     #   百度统计: https://tongji.baidu.com/
     #   TianliCDN: https://ql.tianli0.top/
     # Acrylic:
@@ -281,7 +281,7 @@ thirdparty:
       # hits:
       #   per_page: 6
     local_search:
-      enable: false
+      enable: true
       preload: false
       CDN:
     
@@ -306,7 +306,7 @@ comment:
 # 插入额外代码 如：统计，广告等
 extends: 
   head: # 在head中插入
-    # - <script></script>
+     - <script type="text/javascript" src="//js.users.51.la/21682797.js"></script>
   body: # 在body中插入
 
 # 非必要勿动
