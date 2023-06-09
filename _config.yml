@@ -7,7 +7,7 @@ title: Lytianx
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Mutx163
 language: zh-CN
 timezone: ''
 
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: anzhiyu
+theme: Acrylic
 
 
 # 站点部署到github要配置Deployment
